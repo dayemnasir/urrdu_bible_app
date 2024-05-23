@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:urdu_bible/screen/sigup_screen.dart';
 
 import 'login_screen.dart';
 
@@ -13,7 +14,7 @@ class wellcom_screen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-         Image.asset('assets/images/login_img.png',width: 350.0,),
+            Image.asset('assets/images/login_img.png',width: 350.0,),
             Container(
               padding: EdgeInsets.only(left: 50,right: 50),
               child: Text("عقل و حکمت کے لئے، بائبل ہمیشہ ہاتھ میں۔",
@@ -26,7 +27,7 @@ class wellcom_screen extends StatelessWidget {
                   onTap: (){
                     Navigator.pushReplacement(
                         context, MaterialPageRoute(
-                        builder: (context) => login_screen())
+                        builder: (context) => singup_screen())
                     );
                   },
                   child: Padding(
@@ -35,24 +36,32 @@ class wellcom_screen extends StatelessWidget {
                       width: 100,
                       height: 50,
                       decoration: BoxDecoration(
-                          color: Colors.brown,
+                          border: Border.all(width: 2,color: Colors.brown),
                           borderRadius: BorderRadius.circular(25)
                       ),
-                      child: Center(child: Text('Sign up',style: TextStyle(color: Colors.white),)),
+                      child: Center(child: Text('Sign up')),
                     ),
                   ),
                 ),
                 SizedBox(width: 100,),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    width: 100,
-                    height: 50,
-                    decoration: BoxDecoration(
-                        border: Border.all(width: 2,color: Colors.brown),
-                        borderRadius: BorderRadius.circular(25)
+                InkWell(
+                  onTap: (){
+                    Navigator.pushReplacement(
+                        context, MaterialPageRoute(
+                        builder: (context) => login_screen())
+                    );
+                  },
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 100,
+                      height: 50,
+                      decoration: BoxDecoration(
+                          border: Border.all(width: 2,color: Colors.brown),
+                          borderRadius: BorderRadius.circular(25)
+                      ),
+                      child: Center(child: Text("Login")),
                     ),
-                    child: Center(child: Text("Login")),
                   ),
                 )
               ],
@@ -62,22 +71,22 @@ class wellcom_screen extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(
-                width: 310,
-                height: 50,
-                decoration: BoxDecoration(
-                    border: Border.all(width: 2,color: Colors.brown),
-                    borderRadius: BorderRadius.circular(25)
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 55),
-                      child: Image.asset('assets/images/fb.png',width: 20,),
-                    ),
-                    Text('Contiune with Facebook ')
+                  width: 310,
+                  height: 50,
+                  decoration: BoxDecoration(
+                      border: Border.all(width: 2,color: Colors.brown),
+                      borderRadius: BorderRadius.circular(25)
+                  ),
+                  child: Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 55),
+                        child: Image.asset('assets/images/fb.png',width: 20,),
+                      ),
+                      Text('Contiune with Facebook ')
 
-                  ],
-                )
+                    ],
+                  )
               ),
             ),
             Padding(
