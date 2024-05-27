@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:urdu_bible/screen/home.dart';
-import 'package:urdu_bible/screen/login_screen.dart';
+
+import 'login_screen.dart';
 class singup_screen extends StatelessWidget {
   singup_screen({super.key});
 

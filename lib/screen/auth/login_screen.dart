@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:urdu_bible/screen/sigup_screen.dart';
+import 'package:urdu_bible/screen/auth/sigup_screen.dart';
 import '';
-import 'home.dart';
+import '../home.dart';
 class login_screen extends StatelessWidget {
   login_screen({super.key});
 

@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:urdu_bible/firebase_services/splash_services.dart';
 import 'package:urdu_bible/screen/wellcom_screen.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -11,9 +12,13 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
 
+
+  SplashServices splashServices = SplashServices();
+
   @override
   void initState() {
     super.initState();
+    splashServices.isLogin(context);
     Future.delayed(Duration(seconds: 4),(){
       Navigator.pushReplacement(
           context, MaterialPageRoute(
