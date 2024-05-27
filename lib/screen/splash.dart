@@ -26,24 +26,24 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFDAC09B),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            SizedBox(height:230,),
-            Image.asset(
-              'assets/images/app_logo.png',
-              width: 310.0,
-            ),
-            SizedBox(height:150,),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          SizedBox(height:130,),
+          Image.asset(
+            'assets/images/app_logo.png',
+            width: 310.0,
+          ),
+          SizedBox(height:150,),
 
-            Text(
+          Center(
+            child: Text(
               '----Powered by Aimers Solutions----',
               style: TextStyle(color: Color(0xff754A37), fontSize: 15),
-            )
-          ],
-        ),
+            ),
+          )
+        ],
       ),
     );
   }

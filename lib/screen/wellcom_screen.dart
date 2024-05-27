@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:urdu_bible/screen/sigup_screen.dart';
 
 import 'login_screen.dart';
@@ -17,8 +18,10 @@ class wellcom_screen extends StatelessWidget {
             Image.asset('assets/images/login_img.png',width: 350.0,),
             Container(
               padding: EdgeInsets.only(left: 50,right: 50),
-              child: Text("عقل و حکمت کے لئے، بائبل ہمیشہ ہاتھ میں۔",
-                style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold,color: Colors.brown),),
+              child: Text("عقل و حکمت کے لئے، بائبل \n                 ہمیشہ ہاتھ میں۔",
+                style: GoogleFonts.jomhuria(
+                  textStyle: TextStyle(fontSize: 35,color: Colors.brown),),
+                )
             ),
 
             Row(
@@ -122,3 +125,12 @@ class wellcom_screen extends StatelessWidget {
     );
   }
 }
+
+
+//
+//
+//
+//
+//
+//
+//
