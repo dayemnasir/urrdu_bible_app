@@ -1,8 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:urdu_bible/screen/sigup_screen.dart';
+import 'package:urdu_bible/screen/auth/sigup_screen.dart';
 
-import 'login_screen.dart';
+import 'auth/login_screen.dart';
+
 
 class wellcom_screen extends StatelessWidget {
   const wellcom_screen({super.key});
@@ -83,7 +84,7 @@ class wellcom_screen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 55),
                         child: Image.asset('assets/images/fb.png',width: 20,),
                       ),
-                      Text('Contiune with Facebook ')
+                      Text('Continue with Facebook ')
 
                     ],
                   )
@@ -104,7 +105,7 @@ class wellcom_screen extends StatelessWidget {
                         padding: const EdgeInsets.only(left: 50),
                         child: Image.asset('assets/images/g.png',width: 50,),
                       ),
-                      Text('Contiune with Google ')
+                      Text('Continue with Google ')
 
                     ],
                   )

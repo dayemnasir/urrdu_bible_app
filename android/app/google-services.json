@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "255369373481",
+    "project_id": "urdu-bible-app-305c3",
+    "storage_bucket": "urdu-bible-app-305c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255369373481:android:8a2661d86049405f16f938",
+        "android_client_info": {
+          "package_name": "com.example.urdu_bible"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM7i8xjfXaN_oX2Zyo3JOgTD-eRLz_vjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
