@@ -1,5 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:urdu_bible/firebase_services/setting_service.dart';
 
 import '../widgets/reusable_container.dart';
 
@@ -109,7 +111,7 @@ class HomePage extends StatelessWidget {
               //
               // },),
               BottomTabs(text: 'Settings', icons: Icons.settings, ontap: (){
-              // Navigator.push(context, MaterialPageRoute(builder: (context)=>ux_language()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> setting_services()));
 
               },),
 

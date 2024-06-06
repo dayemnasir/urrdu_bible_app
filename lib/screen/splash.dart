@@ -19,12 +19,6 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     splashServices.isLogin(context);
-    Future.delayed(Duration(seconds: 4),(){
-      Navigator.pushReplacement(
-          context, MaterialPageRoute(
-          builder: (context) => const wellcom_screen())
-      );
-    });
   }
 
   @override
